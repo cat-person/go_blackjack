@@ -1,10 +1,11 @@
 package main
 
 import (
-	"math/rand"	
+	"math/rand"
 )
 
 var defaultDeck = []string{
+	"A", "A", "A", "A",
 	"A", "A", "A", "A",
 	"K", "K", "K", "K",
 	"Q", "Q", "Q", "Q",
@@ -26,7 +27,7 @@ type Deck struct {
 }
 
 func getDefaultDeck() Deck {
-	return Deck { defaultDeck }
+	return Deck{defaultDeck}
 }
 
 func (deck *Deck) Shuffle() {
